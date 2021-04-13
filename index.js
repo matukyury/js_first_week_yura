@@ -1,76 +1,88 @@
 function sayHello(name) {
-    console.log("Hello, " + name + "!");{
-    if (name="Mark")
-    console.log("Hi, " + name + "!");}
-
-
-}
+    if (typeof name === 'string')
   
+    {if (name === "Mark")
+    console.log("Hi, "+name+"!");}
+    
+    
+    console.log("Hello, "+name+"!");    
+}
+
+
+
 sayHello("Oleg");
 sayHello("Viktor");
 sayHello("Mark");
 
-const n = [3];
-const m = [4];
-console.log (( Math.pow(m, 2) ) + (Math.pow(n, 2)));
-
-console.log (Math.hypot(n, m));
 
 
-const a = (2)
-const b = (5)
+function hypot(n, m){
 
-console.log (Math.min(a, b))
+console.log (Math.hypot(n, m));;
 
-
-const c = (3)
-const d = (-1)
-
-console.log (Math.min(c, d))
-
-const e = (1)
-const f = (1)
-
-console.log (Math.min(e, f))
-
-
-const g = (4)
-    if (g % 2 == 0) 
-        
-console.log(g)
-
-
-const chars1 = "Hello";
-
-console.log(chars1.slice(1, - 1));
-
-const chars2 = "A";
-
-console.log(chars2.slice(1, - 1));
+}
+hypot(3, 4);
 
 
 
-
-const fn1 = (1, 2, 3, "4", "5", "6")
-
-console.log( String(1), String(2), String(3), Number("4"), Number("5"), Number("6") );
+//console.log (( Math.pow(m, 2) ) + (Math.pow(n, 2)));
 
 
+function mathMin(a, b){
+    console.log (Math.min(a, b))
+}
+
+mathMin(2, 5);
+mathMin(3, -1);
+mathMin(1, 1);
 
 
-const firstArray = [1, 2, 3];
-const secondArray = [4, 5, 6];
-const thirdArray = [...firstArray, ...secondArray];
+function isEven (g){
+    console.log (g % 2 == 0 || false);
+}
 
-console.log(thirdArray);
-
-
-
-const str = 'Привет мир!';
-
-console.log(str.substr(0, 6) + "...");
-// expected output: "oz"
+isEven(4);
+isEven(5);
 
 
+function deleteChars (chars) {
+    if (typeof chars === 'string');
+console.log(chars.slice(1, - 1));
 
+}
+
+deleteChars('Hello');
+deleteChars('A');
+
+
+
+function numberStroke (a, b, c, d, e, f) {
+
+    if (typeof a, b, c === 'number');
+    if (typeof d, e, f === 'string');
+    console.log( String(a), String(b), String(c), Number(d), Number(e), Number(f) );
+
+}
+
+numberStroke (1, 2, 3, "4", "5", "6")
+
+
+
+
+function massive (){
+    const firstArray = [1, 2, 3];
+    const secondArray = [4, 5, 6];
+    const thirdArray = [...firstArray, ...secondArray];
+    console.log(thirdArray);
+}
+
+massive ();
+
+
+function stringCutter (str) {
+    if (typeof str === 'string');
+    console.log(str.substr(0, 6) + "...");
+}
+
+stringCutter ('Привет мир!');
 
